@@ -20,7 +20,7 @@ select = Select(home_library)
 
 # Select by visible text (what the user sees in the dropdown)
 select.select_by_visible_text("City of Fairfax Regional Library")
-zip_code.send_keys("23059")
+zip_code.send_keys("12345") #zipcode
 
 submit_button = driver.find_element(By.NAME, "ctl00$BodyMainContent$btnSubmitBranchAndZip")
 submit_button.click()
@@ -35,13 +35,13 @@ text = f"jay{random.randint(1, 10000)}"
 driver.find_element(By.NAME, "txtNameFirst").send_keys(text)
 driver.find_element(By.NAME, "txtNameLast").send_keys(text)
 
-driver.find_element(By.NAME, "txtBirthdatemm").send_keys("09")
-driver.find_element(By.NAME, "txtBirthdatedd").send_keys("30")
-driver.find_element(By.NAME, "txtBirthdateyyyy").send_keys("2008")
+driver.find_element(By.NAME, "txtBirthdatemm").send_keys("01")
+driver.find_element(By.NAME, "txtBirthdatedd").send_keys("01")
+driver.find_element(By.NAME, "txtBirthdateyyyy").send_keys("2000")
 
-driver.find_element(By.NAME, "txtStreet1").send_keys("11600 Herrick Ln")
+driver.find_element(By.NAME, "txtStreet1").send_keys("Your Address")
 
-driver.find_element(By.NAME, "txtEmail").send_keys("hcps-chauhanjs@henricostudents.org")
+driver.find_element(By.NAME, "txtEmail").send_keys("email@gmail.com")
 
 
 home_library = Select(driver.find_element(By.NAME, "txtUDF3")).select_by_visible_text("NO")
