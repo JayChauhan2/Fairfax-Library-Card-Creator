@@ -1,4 +1,4 @@
-# Virginia Library Card Creator
+# Virginia Library Card Creator 📚
 
 Automated script to create library cards at top Virginia libraries for instant access to Libby and online reading platforms.
 
