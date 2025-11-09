@@ -68,15 +68,15 @@ Edit these variables to customize your registration:
 select.select_by_visible_text("City of Fairfax Regional Library")
 
 # Zip code (must be valid for library system)
-zip_code.send_keys("23059")
+zip_code.send_keys("12345")
 
 # Birth date (must meet age requirements)
-driver.find_element(By.NAME, "txtBirthdatemm").send_keys("09")
-driver.find_element(By.NAME, "txtBirthdatedd").send_keys("30")
-driver.find_element(By.NAME, "txtBirthdateyyyy").send_keys("2008")
+driver.find_element(By.NAME, "txtBirthdatemm").send_keys("01")
+driver.find_element(By.NAME, "txtBirthdatedd").send_keys("01")
+driver.find_element(By.NAME, "txtBirthdateyyyy").send_keys("2000")
 
 # Address (must be in library service area)
-driver.find_element(By.NAME, "txtStreet1").send_keys("11600 Herrick Ln")
+driver.find_element(By.NAME, "txtStreet1").send_keys("My Address")
 
 # Email
 driver.find_element(By.NAME, "txtEmail").send_keys("your-email@example.com")
